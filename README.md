@@ -7,7 +7,7 @@
 
 - PHP 7.4
 
-## SetUp
+## Set up
 
 - Create a simple sqlite database file
 
