@@ -37,3 +37,4 @@ $ php artisan serve
 - Work on throttling possible spam attacks
 - Add a captcha
 - Add fail test cases
+- Improve email template
