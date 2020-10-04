@@ -4,6 +4,7 @@ namespace App\Jobs;
 
 use App\Mail\TellAFriendMailable;
 use App\Models\TellAFriend;
+use Carbon\Carbon;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -36,6 +37,9 @@ class TellAFriendJob implements ShouldQueue
     public function handle()
     {
         $mailable = new TellAFriendMailable($this->tellAFriend);
+
+        $this->tellAFriend->sent_at = Carbon::now();
+        $this->tellAFriend->save();
 
         Mail::to($this->tellAFriend->friends_email)->send($mailable);
     }

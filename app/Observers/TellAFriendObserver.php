@@ -17,48 +17,4 @@ class TellAFriendObserver
     {
         TellAFriendJob::dispatch($tellAFriend);
     }
-
-    /**
-     * Handle the tell a friend "updated" event.
-     *
-     * @param  \App\Models\TellAFriend  $tellAFriend
-     * @return void
-     */
-    public function updated(TellAFriend $tellAFriend)
-    {
-        //
-    }
-
-    /**
-     * Handle the tell a friend "deleted" event.
-     *
-     * @param  \App\Models\TellAFriend  $tellAFriend
-     * @return void
-     */
-    public function deleted(TellAFriend $tellAFriend)
-    {
-        //
-    }
-
-    /**
-     * Handle the tell a friend "restored" event.
-     *
-     * @param  \App\Models\TellAFriend  $tellAFriend
-     * @return void
-     */
-    public function restored(TellAFriend $tellAFriend)
-    {
-        //
-    }
-
-    /**
-     * Handle the tell a friend "force deleted" event.
-     *
-     * @param  \App\Models\TellAFriend  $tellAFriend
-     * @return void
-     */
-    public function forceDeleted(TellAFriend $tellAFriend)
-    {
-        //
-    }
 }
