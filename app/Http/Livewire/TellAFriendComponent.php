@@ -3,12 +3,11 @@
 namespace App\Http\Livewire;
 
 use App\DTOs\TellAFriendDTO;
-use App\Jobs\TellAFriendJob;
 use App\Repositories\TellAFriendRepository;
 use Livewire\Component;
 
 
-class SentToFriend extends Component
+class TellAFriendComponent extends Component
 {
     public $your_name;
     public $friends_email;
@@ -21,7 +20,7 @@ class SentToFriend extends Component
         'friends_name'  => 'required|min:5',
     ];
 
-    public function contactFormSubmit(TellAFriendRepository $tellAFriendRepository)
+    public function sentToFriend(TellAFriendRepository $tellAFriendRepository)
     {
         $this->validate();
 

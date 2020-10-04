@@ -7,7 +7,7 @@
                 <h2 class="text-xl font-bold">Send to a friend</h2>
                 <p>Share this great deal with friends!</p>
 
-                <form class="" wire:submit.prevent="contactFormSubmit">
+                <form class="" wire:submit.prevent="sentToFriend">
                     <div class="mb-4">
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="your_name">
                             Your name *
