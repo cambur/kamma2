@@ -9,19 +9,23 @@
 
 ## Set up
 
-- Create a simple sqlite database file
+- Save the **.env.example** as **.env**
+
+- Set up your mailtrap credentials in the .env file that you just created.
+
+- Create a simple sqlite database file_
 
 ```console
 $ touch database.sqlite
 ```
 
-- Run migrations
+- Run migrations:
 
 ```console
 $ php artisan migrate
 ```
 
-- Run the server
+- Run the server:
 
 ```console
 $ php artisan serve
@@ -30,5 +34,6 @@ $ php artisan serve
 
 ## Backlog
 
-- Work on a throttling possible spam attacks
+- Work on throttling possible spam attacks
 - Add a captcha
+- Add fail test cases
