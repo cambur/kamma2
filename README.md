@@ -9,7 +9,7 @@
 
 ## Set up
 
-- Save the **.env.example** as **.env**
+- Save the file **.env.example** as **.env**
 
 - Set up your mailtrap credentials in the .env file that you just created.
 
@@ -34,7 +34,12 @@ $ php artisan serve
 
 ## Backlog
 
+A few aspects to improve
+
 - Work on throttling possible spam attacks
 - Add a captcha
 - Add fail test cases
 - Improve email template
+- Improve responsive design
+- Add a loader
+- Handle exceptions
